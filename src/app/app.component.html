@@ -1,0 +1,7 @@
+<button (click)="getData()">Llamar API</button>
+
+<p *ngIf="loading">Cargando...</p>
+<p *ngIf="data?.length === 0">No hay datos</p>
+<p *ngIf="data">
+  {{data | json }}
+</p>
